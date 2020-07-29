@@ -116,7 +116,7 @@ const deleteItem = (
   let i = index;
   if (nextIndexIndentValue > indentValue) {
     for (i = index + 1; i < data.length; i++) {
-      if (indentValue === indentValues[i]) {
+      if (indentValue >= indentValues[i]) {
         break;
       }
     }
