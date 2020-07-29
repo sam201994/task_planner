@@ -1,0 +1,151 @@
+.main-container {
+  margin: 100px;
+}
+
+.process-button-container {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.process-button {
+  cursor: pointer;
+  background-color: rgb(29, 105, 191);
+  height: 30px;
+  width: 100px;
+  padding:5px;
+  margin: 5px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.list-container {
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  border-bottom: 1px lightgrey solid;
+  border-top: 1px lightgrey solid;
+  margin-top:5px;
+}
+
+.left-col-header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100px;
+}
+
+.right-col-header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.header-main-title{
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}
+
+.header-sub-title{
+  font-weight: bold;
+  font-size: 12px;
+  color: lightgrey;
+  font-weight: bold;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: grey;
+}
+
+.row-main-container {
+  display: flex;
+  border-bottom: 1px lightgrey solid;
+}
+
+.row-actions-container{
+  display: flex;
+  margin: 20px;
+}
+
+.action-button {
+  margin: 2px;
+  cursor: pointer;
+}
+
+.action-button:disabled {
+  margin: 2px;
+}
+
+.action-button:hover {
+  color: rgb(27, 176, 179);
+}
+
+.row-text-container{
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+.indent-pad {
+  height: 100%;
+  width: 50px;
+  background-color: rgb(247, 247, 247);
+  border-right: 2px solid;
+
+}
+.row-text{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.row-text input {
+  height: 25px;
+  border:none;
+  border-bottom: 1px lightgrey solid;
+  width: 300px;
+}
+
+.row-text input:focus {
+  height: 25px;
+  outline: none;
+  border-bottom: 1px blue solid;
+  width: 300px;
+}
+
+.button-container {
+  cursor: pointer;
+  background-color: rgb(29, 105, 191);
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  color: white;
+  margin-left: 2px;
+}
+
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
