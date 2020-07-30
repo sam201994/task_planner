@@ -23,6 +23,14 @@ class Row extends React.PureComponent {
     }
   };
 
+  handleOnKeyDown = (e, isVisible) => {
+    if(e.keyCode === 13) { 
+      this.handleTextClick(e, isVisible)
+    }
+  }
+
+
+
   handleOnChangeText = e => {
     this.setState({
       value: e.target.value,
@@ -37,7 +45,7 @@ class Row extends React.PureComponent {
         style={{color}}
         onClick={e => this.handleTextClick(e, true)}>
         {isInputActive ? (
-          <input type="text" name="name" onChange={this.handleOnChangeText} />
+          <input value={value} onKeyDown={e => this.handleOnKeyDown(e, false)} type="text" name="name" onChange={this.handleOnChangeText} />
         ) : (
           value
         )}
